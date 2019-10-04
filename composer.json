@@ -1,6 +1,7 @@
 {
   "name": "can0199/php-router",
-  "description": "extends dannyvankooten/php-router",
+  "version": "1.0.1",
+  "description": "extends dannyvankooten/php-router to support ajax methods in config file",
   "keywords": [
     "router",
     "routing",

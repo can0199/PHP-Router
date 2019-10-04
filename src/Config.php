@@ -49,7 +49,8 @@ final class Config
             throw new InvalidArgumentException(sprintf('The file %s not exists!', $yamlFile));
         }
 
-        $yamlFile = str_replace('AJAX', 'XMLHttpRequest', $yamlFile);
-        return Yaml::parse(file_get_contents($yamlFile));
+        $fileData = file_get_contents($yamlFile);
+        $fileData = str_replace('AJAX', 'XMLHttpRequest', $fileData);
+        return Yaml::parse($fileData);
     }
 }
