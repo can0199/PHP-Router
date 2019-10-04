@@ -1,6 +1,6 @@
 {
-  "name": "dannyvankooten/php-router",
-  "description": "Simple PHP Router, supports REST and reverse routing.",
+  "name": "can0199/php-router",
+  "description": "extends dannyvankooten/php-router",
   "keywords": [
     "router",
     "routing",
