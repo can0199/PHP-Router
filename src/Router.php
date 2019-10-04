@@ -79,6 +79,10 @@ class Router
             && in_array($_method, array(RequestMethodInterface::METHOD_PUT, RequestMethodInterface::METHOD_DELETE), true)
         ) ? $_method : $_SERVER['REQUEST_METHOD'];
 
+        if (isset($_SERVER['HTTP_X_REQUESTED_WITH'])) {
+            $requestMethod = $_SERVER['HTTP_X_REQUESTED_WITH'];
+        }
+
         $requestUrl = $_SERVER['REQUEST_URI'];
 
         // strip GET variables from URL
